@@ -1,7 +1,7 @@
 {
     "name": "@xone-labs/aadharjs",
     "version": "0.0.1",
-    "description": "An Aadhar pasrsing library",
+    "description": "An Aadhar parsing and validation library",
     "types": "./types/index.d.ts",
     "publishConfig": {
         "access": "public"
