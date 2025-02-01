@@ -3,6 +3,9 @@
     "version": "0.0.1",
     "description": "An Aadhar pasrsing library",
     "types": "./types/index.d.ts",
+    "publishConfig": {
+        "access": "public"
+    },
     "exports": {
         ".": {
             "types": "./types/index.d.ts",
