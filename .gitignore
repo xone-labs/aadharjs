@@ -209,3 +209,8 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# project build files
+dist/
+build/
+lib/
+types/
