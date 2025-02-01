@@ -64,3 +64,7 @@ console.log(isValid); // true or false
 ## License
 
 This project is licensed under the MIT License.
+
+## Contributors
+
+- [Mohinish Sharma](https://github.com/mohinishsharma)
