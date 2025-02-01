@@ -31,12 +31,16 @@
     "pako": "^2.1.0"
   },
   "devDependencies": {
+        "@eslint/js": "^9.19.0",
+        "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/pako": "^2.0.3",
+        "eslint": "^9.19.0",
     "rollup": "^2.56.3",
     "tslib": "^2.6.2",
-    "typescript": "^5.4.4"
+        "typescript": "^5.4.4",
+        "typescript-eslint": "^8.22.0"
   }
 }
