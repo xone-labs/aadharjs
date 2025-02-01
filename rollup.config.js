@@ -9,20 +9,28 @@ import terser from '@rollup/plugin-terser';
  */
 const config = {
     input: 'src/index.ts',
+    external: [
+        'pako'
+    ],
     output: [
         {
-            file: 'lib/esm/aadhar.js',
+            file: 'lib/esm/aadhar.mjs',
             format: 'esm',
+            exports: 'auto',
+            esModule: true
         },
         {
             file: 'lib/cjs/aadhar.js',
-            format: 'cjs',
+            format: 'cjs'
         },
         {
             file: 'lib/aadhar.min.js',
             format: 'umd',
             esModule: false,
-            name: "AadharJS"
+            name: "AadharJS",
+            globals: {
+                pako: 'pako'
+            }
         }
     ],
     plugins: [
