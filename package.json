@@ -1,42 +1,57 @@
 {
-  "name": "aadharjs",
-  "version": "1.0.0",
-  "description": "",
-  "main": "lib/cjs/aadharjs.js",
-  "module": "lib/esm/aadharjs.js",
-  "files": [
-    "lib"
-  ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c rollup.config.js",
-    "dev": "rollup -c rollup.config.js -w"
-  },
-  "keywords": [],
-  "author": {
-    "email": "developer@xubikle.com",
-    "name": "Xubikle Development"
-  },
-  "maintainers": [
-    {
-      "email": "sharmamohinish67@gmail.com",
-      "name": "Mohinish Sharma"
+    "name": "@xone-labs/aadharjs",
+    "version": "0.0.1",
+    "description": "An Aadhar pasrsing library",
+    "types": "./types/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./types/index.d.ts",
+            "import": "./lib/esm/aadhar.mjs",
+            "require": "./lib/cjs/aadhar.js"
+        }
+    },
+    "files": [
+        "lib",
+        "types"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "rollup -c rollup.config.js && tsc --emitDeclarationOnly --declaration --declarationDir types",
+        "dev": "rollup -c rollup.config.js -w"
+    },
+    "keywords": [],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xone-labs/aadharjs"
+    },
+    "author": {
+        "email": "developer@xubikle.com",
+        "name": "Xubikle Development"
+    },
+    "maintainers": [
+        {
+            "email": "sharmamohinish67@gmail.com",
+            "name": "Mohinish Sharma"
+        }
+    ],
+    "license": "MIT",
+    "engines": {
+        "node": ">=12"
+    },
+    "dependencies": {
+        "pako": "^2.1.0"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.19.0",
+        "@rollup/plugin-commonjs": "^28.0.2",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-terser": "^0.4.4",
+        "@rollup/plugin-typescript": "^11.1.6",
+        "@types/pako": "^2.0.3",
+        "eslint": "^9.19.0",
+        "rollup": "^2.56.3",
+        "tslib": "^2.6.2",
+        "typescript": "^5.4.4",
+        "typescript-eslint": "^8.22.0"
     }
-  ],
-  "license": "ISC",
-  "engines": {
-    "node": ">=12"
-  },
-  "dependencies": {
-    "pako": "^2.1.0"
-  },
-  "devDependencies": {
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-terser": "^0.4.4",
-    "@rollup/plugin-typescript": "^11.1.6",
-    "@types/pako": "^2.0.3",
-    "rollup": "^2.56.3",
-    "tslib": "^2.6.2",
-    "typescript": "^5.4.4"
-  }
 }
