@@ -20,6 +20,10 @@
         "dev": "rollup -c rollup.config.js -w"
     },
     "keywords": [],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xone-labs/aadharjs"
+    },
     "author": {
         "email": "developer@xubikle.com",
         "name": "Xubikle Development"
