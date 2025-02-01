@@ -3,10 +3,11 @@
         "src/**/*.ts"
     ],
     "exclude": [
-        "node_modules", 
-        "build", 
-        "dist", 
-        "lib", 
+        "node_modules",
+        "build",
+        "dist",
+        "lib",
+        "types",
         "playground"
     ],
     "compilerOptions": {
@@ -16,7 +17,8 @@
         "target": "ES2015",
         "noImplicitAny": true,
         "sourceMap": false,
-        "outDir": "build",
+        "baseUrl": ".",
+        "outDir": "dist",
         "rootDir": "src"
     }
 }
