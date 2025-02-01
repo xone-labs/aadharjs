@@ -1,8 +1,11 @@
 {
     "name": "@xone-labs/aadharjs",
-    "version": "0.0.1",
-    "description": "An Aadhar pasrsing library",
+    "version": "0.0.2",
+    "description": "An Aadhar parsing and validation library",
     "types": "./types/index.d.ts",
+    "publishConfig": {
+        "access": "public"
+    },
     "exports": {
         ".": {
             "types": "./types/index.d.ts",
@@ -22,7 +25,7 @@
     "keywords": [],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/xone-labs/aadharjs"
+        "url": "git+https://github.com/xone-labs/aadharjs.git"
     },
     "author": {
         "email": "developer@xubikle.com",
